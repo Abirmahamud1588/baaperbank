@@ -30,6 +30,9 @@ document.getElementById('btn-withdraw').addEventListener('click', function(){
  
  
   }
+
+
+  withdrawField.value = '';
    
 
 
