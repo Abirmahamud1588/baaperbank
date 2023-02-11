@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="com">
+        <h1>This is comment box project using dom in js
+        </h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae, totam! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Error, aut.
+        </p>
+    </div>
+    <textarea name="" id="combox" cols="30" rows="10"></textarea>
+    <button id="post">Post</button>
+    <script>
+        // step1
+        document.getElementById('post').addEventListener('click', function(){
+            // step2
+            const combox = document.getElementById('combox');
+            const newcom = combox.value; 
+              // step3 set comment in the div
+              const com =  document.getElementById('com');
+              const p = document.createElement('p');
+              p.innerText = newcom;
+              com.appendChild(p);
+
+              //clear the box
+              combox.value=' ';
+
+
+
+
+
+        })
+
+
+
+
+
+
+    </script>
+</body>
+</html>
